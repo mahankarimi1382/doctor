@@ -1,11 +1,48 @@
 .App {
   text-align: center;
 }
+@font-face {
+  font-family: Yekan;
+  src: url(/src/assets/Yekan.ttf);
+}
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+*{
+  font-family: Yekan;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+swiper-container {
+  margin-top: 5px;
+  width: 80%;
+  height: 400px;
+  /* line-height: 200px;
+  text-align: center; */
+}
+.banner{
+  background-image: url("./assets/banner2.png");
+}
+swiper-slide {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  background-color: rgb(80, 95, 229);
+  border-radius: 30px;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
